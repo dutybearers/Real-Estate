@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-stone-warm: #F4F1EA;
+  --color-stone-card: #FFFFFF;
+  --color-sand: #EAE5DC;
+  --color-gold-accent: #C5A880;
+  --color-charcoal-deep: #161513;
+  --color-charcoal-soft: #2C2926;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, .font-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Custom Leaflet Map styling to match Maison Fav luxury minimalism */
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #1E1E1E !important;
+  border-radius: 4px !important;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.15) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid #EAE5DC !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+}
+
+.custom-map-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161513;
+  color: #FFFFFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  border: 1.5px solid #FFFFFF;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.custom-map-marker:hover, .custom-map-marker.active {
+  background-color: #C5A880;
+  color: #161513;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(197, 168, 128, 0.4);
+}

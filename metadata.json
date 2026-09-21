@@ -1,0 +1,6 @@
+{
+  "name": "Touch of Valentine Homes",
+  "description": "Exclusive architectural residences, luxury estates, and private advisory by Touch of Valentine Homes (TOV).",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
